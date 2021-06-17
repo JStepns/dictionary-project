@@ -1,5 +1,6 @@
 import logo from './images/logo.png';
 import './App.css';
+import SearchForm from "./SearchForm";
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Dictionary</h1>
       </header>
+      <main>
+        <SearchForm />
+      </main>
       <footer>Coded by Jacqueline Stephens, open-sourced on <a href="https://github.com/JStepns/dictionary-project" target="_blank">Github</a> and hosted on Netlify</footer>
       </div>
     </div>
