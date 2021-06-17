@@ -13,7 +13,7 @@ function App() {
       <main>
         <SearchForm />
       </main>
-      <footer>Coded by Jacqueline Stephens, open-sourced on <a href="https://github.com/JStepns/dictionary-project" target="_blank">Github</a> and hosted on Netlify</footer>
+      <footer>Coded by Jacqueline Stephens, open-sourced on <a href="https://github.com/JStepns/dictionary-project" target="_blank" rel="noreferrer">Github</a> and hosted on Netlify</footer>
       </div>
     </div>
   );
