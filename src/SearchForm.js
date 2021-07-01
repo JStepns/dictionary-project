@@ -14,7 +14,6 @@ export default function SearchForm() {
 
     function search(event) {
         event.preventDefault();
-        alert(`Searching for the definition of ${searchWord}`);
 
         //API documentation here:https://dictionaryapi.dev/
         
