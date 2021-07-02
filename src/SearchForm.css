@@ -13,26 +13,28 @@
 
 .SearchForm #SearchBar {
   width: 90%;
-  padding: 8px 5px;
+  padding: 15px 5px;
   border: 1px solid #bdbdbd;
   border-radius: 5px;
+  font-size: 18px;
 }
 .SearchForm #SearchBar:focus {
-  border: 1px solid #bdbdbd;
+  border: 1px solid;
   outline-color: #bdbdbd;
 }
 
 .SearchForm #SearchButton {
   width: 10%;
-  padding: 8px 5px;
+  padding: 14px 5px;
   border: 1px solid #bdbdbd;
   border-radius: 5px;
+  font-size: 18px;
 }
 
 .SearchForm #SearchButton:hover {
   color: #00bcd4;
-  font-weight: 600;
+  font-weight: 700;
   background: #ffffff;
   cursor: pointer;
-  transition: ease-in-out 150ms;
+  transition: all 150ms ease-in-out;
 }

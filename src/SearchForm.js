@@ -39,7 +39,7 @@ export default function SearchForm(props) {
             <h2>What word are you looking for?</h2>
             <section>
                 <form onSubmit={handleSubmit}>
-                    <input type="search" onChange={handleSearchWordChange} autofocus="on" id="SearchBar" />
+                    <input type="search" onChange={handleSearchWordChange} autofocus="on" id="SearchBar" defaultValue="blue" />
                     <input type="submit" value="Search" id="SearchButton" />
                 </form>
             </section>

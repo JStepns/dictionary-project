@@ -1,8 +1,11 @@
 .App {
-  text-align: center;
   background: #b2ebf2;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+.App header {
+  text-align: center;
+}
+
 .App .Container {
   max-width: 960px;
   margin: 0 auto;
