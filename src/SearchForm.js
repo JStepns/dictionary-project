@@ -3,35 +3,53 @@ import axios from "axios";
 import Results from "./Results";
 import "./SearchForm.css";
 
-export default function SearchForm() {
-    let [searchWord, setSearchWord] = useState("");
+export default function SearchForm(props) {
+    let [searchWord, setSearchWord] = useState(props.defaultSearchWord);
     let [results, setResults] = useState(null);
+    let [loaded, setLoaded] = useState(false);
 
     function handleResponse(response) {
-        console.log(response.data[0]);
         setResults(response.data[0]);
     }
 
-    function search(event) {
-        event.preventDefault();
-
+    function search() {
         //API documentation here:https://dictionaryapi.dev/
         
         let apiUrl= `https://api.dictionaryapi.dev/api/v2/entries/en_GB/${searchWord}`;
-        axios.get(apiUrl).then(handleResponse);
+        axios.get(apiUrl).then(handleResponse)
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault(); 
+        search();  
     }
 
     function handleSearchWordChange(event) {
         setSearchWord(event.target.value);
     }
 
-    return (
+    function load() {
+        setLoaded(true);
+        search();
+    }
+
+    if (loaded) {
+        return (
         <div className="SearchForm">
-            <form onSubmit={search}>
-                <input type="search" onChange={handleSearchWordChange} />
-                <input type="submit" value="Search" />
-            </form>
+            <h2>What word are you looking for?</h2>
+            <section>
+                <form onSubmit={handleSubmit}>
+                    <input type="search" onChange={handleSearchWordChange} autofocus="on" id="SearchBar" />
+                    <input type="submit" value="Search" id="SearchButton" />
+                </form>
+            </section>
             <Results results={results}/>
         </div>
     );
+    } else {
+        load();
+        return "Loading";
+    }
+
+    
 }

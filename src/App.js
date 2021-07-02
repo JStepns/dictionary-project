@@ -11,7 +11,7 @@ function App() {
         <h1>Dictionary</h1>
       </header>
       <main>
-        <SearchForm />
+        <SearchForm defaultSearchWord="blue"/>
       </main>
       <br />
       <footer>Coded by Jacqueline Stephens, open-sourced on <a href="https://github.com/JStepns/dictionary-project" target="_blank" rel="noreferrer">Github</a> and hosted on Netlify</footer>
