@@ -1,0 +1,14 @@
+.Phonetics {
+  text-align: left;
+}
+
+.Phonetics #Text {
+  font-size: 25px;
+  color: #757575;
+  margin-right: 30px;
+}
+
+.Phonetics #Audio {
+  font-size: 60px;
+  text-decoration: none;
+}
