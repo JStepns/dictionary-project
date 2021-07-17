@@ -4,16 +4,18 @@ import './Photos.css';
 export default function Photos(props) {
     if (props.photos) {
         return(
-            <section className="Photos">
-                        {props.photos.map(function (photo, index) {
-                            return (
-                                <div key={index}>
-                                    <a href={photo.src.original} target="_blank" rel="noreferrer">
-                                        <img src={photo.src.tiny} alt="searched word"/>
-                                    </a>
-                                </div>
-                            );
-                        })}
+            <section className = "Photos">
+                <div className = "row">
+                    <div className = "col-4">
+                        <img src={props.photos[0].src.tiny} alt="searched word"/>
+                    </div>
+                    <div className = "col-4">
+                        <img src={props.photos[1].src.tiny} alt="searched word"/>
+                    </div>
+                    <div className = "col-4">
+                        <img src={props.photos[2].src.tiny} alt="searched word"/>
+                    </div>
+                </div>   
             </section>
         );
     } else {

@@ -15,19 +15,18 @@ export default function SearchForm(props) {
     }
 
     function handlePexelsResponse(response) {
-        setPhotos(response.data.photos)
-
+        setPhotos(response.data.photos);
     }
 
     function search() {
         //Dictionary API documentation here:https://dictionaryapi.dev/
         
         let apiUrl= `https://api.dictionaryapi.dev/api/v2/entries/en_GB/${searchWord}`;
-        axios.get(apiUrl).then(handleDictionaryResponse)
+        axios.get(apiUrl).then(handleDictionaryResponse);
 
         //Pexels API documentation here:https://www.pexels.com/api/documentation/ 
 
-        let pexelsApiUrl= `https://api.pexels.com/v1/search?query=${searchWord}&per_page=6`;
+        let pexelsApiUrl= `https://api.pexels.com/v1/search?query=${searchWord}&per_page=3`;
         let pexelsApiKey= "563492ad6f9170000100000162411f52d9994660b045a680c52444df";
         let headers= {Authorization : `Bearer ${pexelsApiKey}`};
         axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
@@ -65,6 +64,4 @@ export default function SearchForm(props) {
         load();
         return "Loading";
     }
-
-    
 }
