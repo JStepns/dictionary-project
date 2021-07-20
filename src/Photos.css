@@ -1,6 +1,4 @@
 .Photos img {
-  border-radius: 5px;
-  display: inline-flex;
-  justify-content: space-evenly;
-  flex-direction: row;
+  border-radius: 8px;
+  padding: 10px 0;
 }

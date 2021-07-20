@@ -26,7 +26,7 @@ export default function SearchForm(props) {
 
         //Pexels API documentation here:https://www.pexels.com/api/documentation/ 
 
-        let pexelsApiUrl= `https://api.pexels.com/v1/search?query=${searchWord}&per_page=3`;
+        let pexelsApiUrl= `https://api.pexels.com/v1/search?query=${searchWord}&per_page=6`;
         let pexelsApiKey= "563492ad6f9170000100000162411f52d9994660b045a680c52444df";
         let headers= {Authorization : `Bearer ${pexelsApiKey}`};
         axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
