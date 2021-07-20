@@ -1,5 +1,7 @@
-.Results h2 {
-  font-size: 32px;
-  line-height: 1.5;
+.Results section h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #05a1b2;
   margin: 0;
 }

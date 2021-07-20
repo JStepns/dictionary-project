@@ -1,19 +1,27 @@
 .App {
-  background: #b2ebf2;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: #c3f3f7;
+  font-family: "Noto Serif", serif;
 }
-.App header {
-  text-align: center;
-}
-
 .App .Container {
   max-width: 960px;
   margin: 0 auto;
 }
-.App .App-logo {
+.App .Container .App-header {
+  text-align: center;
+}
+.App .Container .App-header .App-logo {
   max-width: 400px;
 }
-.App h1 {
-  font-size: 36px;
+.App .Container .App-header h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  color: #11556b;
   margin: 0 0 30px 0;
+}
+.App .Container footer {
+  padding-bottom: 15px;
+}
+.App .Container footer a {
+  color: #05a1b2;
 }

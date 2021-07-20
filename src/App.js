@@ -13,7 +13,6 @@ function App() {
       <main>
         <SearchForm defaultSearchWord="blue"/>
       </main>
-      <br />
       <footer>Coded by Jacqueline Stephens, open-sourced on <a href="https://github.com/JStepns/dictionary-project" target="_blank" rel="noreferrer">Github</a> and hosted on Netlify</footer>
       </div>
     </div>

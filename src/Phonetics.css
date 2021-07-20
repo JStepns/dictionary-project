@@ -3,12 +3,14 @@
 }
 
 .Phonetics #Text {
-  font-size: 25px;
+  font-size: 22px;
   color: #757575;
   margin-right: 30px;
 }
 
-.Phonetics #Audio {
-  font-size: 60px;
+.Phonetics a #Audio {
   text-decoration: none;
+}
+.Phonetics img.Audio-icon {
+  max-width: 80px;
 }

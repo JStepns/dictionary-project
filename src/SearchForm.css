@@ -1,12 +1,13 @@
 .SearchForm h2 {
   text-align: left;
   font-style: italic;
+  font-size: 24px;
 }
 
 .SearchForm section {
   background: #ffffff;
   padding: 30px;
-  border: 1px solid #0097a7;
+  border: 2px solid #ffab81;
   border-radius: 8px;
   margin: 20px 0;
 }
@@ -16,7 +17,7 @@
   padding: 15px 5px;
   border: 1px solid #bdbdbd;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 20px;
 }
 .SearchForm #SearchBar:focus {
   border: 1px solid;
@@ -25,15 +26,14 @@
 
 .SearchForm #SearchButton {
   width: 10%;
-  padding: 14px 5px;
+  padding: 15px 5px;
   border: 1px solid #bdbdbd;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .SearchForm #SearchButton:hover {
-  color: #00bcd4;
-  font-weight: 700;
+  color: #05a1b2;
   background: #ffffff;
   cursor: pointer;
   transition: all 150ms ease-in-out;
