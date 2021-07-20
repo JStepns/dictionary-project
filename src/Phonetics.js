@@ -9,7 +9,7 @@ export default function Phonetics(props) {
                 {props.phonetics.text}
             </span>
             <a href={props.phonetics.audio} id="Audio" target="_blank" rel="noreferrer">
-                <img src={megaphone} className="Audio-icon img-fluid" alt="audio" />
+                <img src={megaphone} className="Audio-icon" alt="audio" />
             </a>
         </div>
     )

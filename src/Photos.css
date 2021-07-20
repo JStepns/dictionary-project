@@ -2,3 +2,10 @@
   border-radius: 8px;
   padding: 10px 0;
 }
+@media (max-width: 992px) {
+  .Photos img {
+    margin: 0 auto;
+    display: block;
+    padding: 5px 0;
+  }
+}

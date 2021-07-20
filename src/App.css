@@ -11,6 +11,7 @@
 }
 .App .Container .App-header .App-logo {
   max-width: 400px;
+  margin: 0 auto;
 }
 .App .Container .App-header h1 {
   font-family: "Noto Sans", sans-serif;
@@ -24,4 +25,32 @@
 }
 .App .Container footer a {
   color: #05a1b2;
+}
+@media (max-width: 992px) {
+  .App .Container {
+    max-width: 750px;
+  }
+  .App .Container .App-header h1 {
+    font-size: 38px;
+  }
+  .App .Container footer {
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .App .Container {
+    max-width: 550px;
+  }
+  .App .Container .App-header h1 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 576px) {
+  .App .Container .App-header h1 {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  .App .Container footer {
+    font-size: 14px;
+  }
 }

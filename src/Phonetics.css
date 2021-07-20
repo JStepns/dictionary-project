@@ -14,3 +14,11 @@
 .Phonetics img.Audio-icon {
   max-width: 80px;
 }
+@media (max-width: 992px) {
+  .Phonetics #Text {
+    font-size: 18px;
+  }
+  .Phonetics img.Audio-icon {
+    max-width: 70px;
+  }
+}

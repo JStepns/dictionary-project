@@ -5,3 +5,8 @@
   color: #11556b;
   margin: 0;
 }
+@media (max-width: 992px) {
+  .Results section h2 {
+    font-size: 24px;
+  }
+}

@@ -38,3 +38,40 @@
   cursor: pointer;
   transition: all 150ms ease-in-out;
 }
+@media (max-width: 992px) {
+  .SearchForm h2 {
+    font-size: 20px;
+  }
+  .SearchForm section {
+    padding: 25px;
+    margin: 15px 0;
+  }
+  .SearchForm #SearchBar,
+  .SearchForm #SearchButton {
+    font-size: 16px;
+    padding: 10px 5px;
+  }
+}
+@media (max-width: 768px) {
+  .SearchForm #SearchBar {
+    width: 85%;
+  }
+  .SearchForm #SearchButton {
+    width: 15%;
+  }
+}
+@media (max-width: 576px) {
+  .SearchForm h2 {
+    font-size: 18px;
+  }
+  .SearchForm section {
+    padding: 20px;
+    margin: 10px 0;
+  }
+  .SearchForm #SearchBar {
+    width: 80%;
+  }
+  .SearchForm #SearchButton {
+    width: 20%;
+  }
+}
