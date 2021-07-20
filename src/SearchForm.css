@@ -7,7 +7,7 @@
 .SearchForm section {
   background: #ffffff;
   padding: 30px;
-  border: 2px solid #ffab81;
+  border: 1px solid #05a1b2;
   border-radius: 8px;
   margin: 20px 0;
 }
@@ -20,8 +20,8 @@
   font-size: 20px;
 }
 .SearchForm #SearchBar:focus {
-  border: 1px solid;
-  outline-color: #bdbdbd;
+  border: 0.5px solid;
+  outline-color: #ffab81;
 }
 
 .SearchForm #SearchButton {
